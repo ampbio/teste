@@ -51,7 +51,6 @@
 :root {
   --green:        #3D4F3E;
   --green-dark:   #2C3A2D;
-  --green-light:  #4E6450;
   --green-pale:   #6B7A6C;
   --cream:        #F0EFE5;
   --cream-dark:   #E4E3D8;
@@ -397,23 +396,6 @@ nav {
   transform: scale(1.3);
 }
 
-.hero-slide-counter {
-  position: absolute;
-  bottom: 2rem; left: 2rem;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  color: rgba(240,239,229,0.4);
-  z-index: 2;
-}
-
-.hero-slide-sub {
-  font-size: 11.5px;
-  color: rgba(240,239,229,0.28);
-  margin-top: 2px;
-  font-weight: 300;
-  display: block;
-}
 
 /* ── TICKER ── */
 .ticker-section {
@@ -808,6 +790,15 @@ section {
   color: var(--cream);
 }
 
+@media (max-width: 767px) {
+  .portfolio-grid .proj-card {
+    flex: 0 0 100%;
+  }
+  .proj-card-img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
 /* ── PROCESSO ── */
 .processo {
   background: var(--cream-mid);
@@ -825,7 +816,6 @@ section {
 .processo-steps {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .passo {
@@ -850,8 +840,6 @@ section {
   line-height: 1;
   text-align: right;
 }
-
-.passo-content {}
 
 .passo-title {
   font-family: 'DM Serif Display', serif;
@@ -885,6 +873,7 @@ section {
   line-height: 1.4;
   color: rgba(240,239,229,0.8);
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .processo-aside-sub {
@@ -1173,6 +1162,7 @@ footer {
 
   .portfolio-grid { justify-content: flex-start; }
   .portfolio-grid .proj-card { flex: 0 0 calc(50% - 0.63rem); }
+  .portfolio-grid .proj-card .proj-card-img { aspect-ratio: 16 / 9; }
   .portfolio-header { flex-direction: column; align-items: flex-start; }
 
   section { padding: 4rem 1.5rem; }
@@ -2055,7 +2045,7 @@ footer {
 
         <div class="contato-item">
           <span class="contato-item-label">E-mail</span>
-          <a data-mail="arqiltonferreira" data-domain="gmail.com" href="#" class="contato-item-value">arqiltonferreira@gmail.com</a>
+          <a data-mail="arqiltonferreira" data-domain="gmail.com" href="javascript:void(0)" class="contato-item-value">arqiltonferreira@gmail.com</a>
         </div>
 
         <div class="contato-item">
@@ -2078,7 +2068,7 @@ footer {
             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
           </svg>
         </a>
-        <a data-mail="arqiltonferreira" data-domain="gmail.com" href="#" class="social-link contato-item-value" aria-label="E-mail">
+        <a data-mail="arqiltonferreira" data-domain="gmail.com" href="javascript:void(0)" class="social-link" aria-label="E-mail">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
           </svg>
@@ -2324,15 +2314,16 @@ function openModal(idx) {
   dotsEl.innerHTML   = '';
 
   const imgs = p.images;
-  modalTotal = imgs.length || 1;
 
   if (imgs.length === 0) {
+    modalTotal = 1;
     // placeholder
     slidesEl.innerHTML = `<div class="proj-modal-slide-placeholder">
       <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
       <span>Fotos em breve</span>
     </div>`;
   } else {
+    modalTotal = imgs.length;
     imgs.forEach((src, i) => {
       const slide = document.createElement('div');
       slide.className = 'proj-modal-slide';
@@ -2409,11 +2400,10 @@ function slideNav(dir) { goModalSlide(modalCur + dir); }
 function updateModalSlider() {
   document.getElementById('modal-slides').style.transform = 'translateX(-' + (modalCur * 100) + '%)';
   document.querySelectorAll('.proj-modal-dot').forEach((d, i) => d.classList.toggle('active', i === modalCur));
-  const total = modalTotal;
   const prevBtn = document.querySelector('.proj-modal-nav.prev');
   const nextBtn = document.querySelector('.proj-modal-nav.next');
-  if (prevBtn) prevBtn.classList.toggle('hidden', total <= 1);
-  if (nextBtn) nextBtn.classList.toggle('hidden', total <= 1);
+  if (prevBtn) prevBtn.classList.toggle('hidden', modalTotal <= 1);
+  if (nextBtn) nextBtn.classList.toggle('hidden', modalTotal <= 1);
 }
 
 // Fechar com ESC
