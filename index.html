@@ -3,33 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arquiteto em Imbituba SC | Projetos Residenciais e Comerciais – Ilton Ferreira</title>
+<title>Arquiteto em Imbituba SC | Projetos Residenciais e Comerciais — Ilton Ferreira</title>
 
 <!-- Security -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://iltonferreira.com.br; connect-src 'none'; frame-src 'none'; object-src 'none';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://arqiltonferreira.com; connect-src 'none'; frame-src 'none'; object-src 'none';">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 
 <!-- SEO -->
-<meta name="description" content="Arquiteto em Imbituba SC especializado em projetos residenciais, comerciais e design de interiores. Atende Garopaba, Laguna e toda Santa Catarina. Solicite um orçamento.">
-<meta name="keywords" content="arquiteto em Imbituba, arquiteto Santa Catarina, projeto arquitetônico residencial SC, projeto arquitetônico comercial SC, design de interiores Imbituba, escritório de arquitetura Imbituba, arquiteto Garopaba, arquiteto Laguna SC, projeto de casa SC, projeto executivo arquitetura">
+<meta name="description" content="Arquiteto em Imbituba, SC especializado em projetos residenciais e comerciais com identidade autoral. Do estudo preliminar ao projeto executivo completo. Atendimento em toda Santa Catarina.">
+<meta name="keywords" content="arquiteto em Imbituba, arquiteto Imbituba SC, projeto arquitetônico residencial SC, projeto arquitetônico comercial Santa Catarina, design de interiores Imbituba, arquiteto Garopaba, arquiteto Laguna SC, projeto executivo arquitetura, escritório de arquitetura Imbituba, arquiteto projetista SC">
 <meta name="author" content="Ilton Ferreira">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://iltonferreira.com.br/">
+<link rel="canonical" href="https://arqiltonferreira.com/">
 
 <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://iltonferreira.com.br/">
-<meta property="og:title" content="Arquiteto em Imbituba SC | Projetos Residenciais e Comerciais – Ilton Ferreira">
-<meta property="og:description" content="Arquiteto em Imbituba SC especializado em projetos residenciais, comerciais e design de interiores. Atende Garopaba, Laguna e toda Santa Catarina.">
+<meta property="og:url" content="https://arqiltonferreira.com/">
+<meta property="og:title" content="Arquiteto em Imbituba SC | Ilton Ferreira Arquitetura e Interiores">
+<meta property="og:description" content="Projetos arquitetônicos residenciais e comerciais com identidade autoral em Santa Catarina. Do conceito ao executivo, atendimento remoto para todo o estado.">
 <meta property="og:image" content="https://arqiltonferreira.com/imagens/thumb.png">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Ilton Ferreira Arquitetura">
+<meta property="og:site_name" content="Ilton Ferreira Arquitetura e Interiores">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Arquiteto em Imbituba SC | Projetos Residenciais e Comerciais – Ilton Ferreira">
-<meta name="twitter:description" content="Arquiteto em Imbituba SC especializado em projetos residenciais, comerciais e design de interiores. Atende Garopaba, Laguna e toda Santa Catarina.">
+<meta name="twitter:title" content="Arquiteto em Imbituba SC | Ilton Ferreira Arquitetura e Interiores">
+<meta name="twitter:description" content="Projetos residenciais e comerciais com identidade autoral em Santa Catarina. Do conceito ao executivo.">
 <meta name="twitter:image" content="https://arqiltonferreira.com/imagens/thumb.png">
 
 <!-- Theme color (barra do navegador mobile) -->
@@ -303,7 +303,9 @@ nav {
 .btn-hero-primary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
+  width: 220px;
   background: var(--cream);
   color: var(--green-dark);
   text-decoration: none;
@@ -320,7 +322,9 @@ nav {
 .btn-hero-outline {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
+  width: 220px;
   background: transparent;
   color: rgba(240,239,229,0.7);
   text-decoration: none;
@@ -428,6 +432,9 @@ nav {
 }
 
 .ticker-track:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
+}
 
 .ticker-item {
   display: inline-flex;
@@ -495,6 +502,15 @@ section {
 .section-title em {
   font-style: italic;
   color: var(--text-muted);
+}
+
+.faq-list { max-width: 720px; }
+@media (max-width: 1023px) {
+  .section-title.mobile-center { text-align: center; }
+}
+@media (min-width: 1024px) {
+  .section-title { text-align: center; white-space: nowrap; }
+  .faq-list { max-width: 100%; }
 }
 
 /* ── SOBRE ── */
@@ -618,7 +634,7 @@ section {
 .servicos-grid {
   margin-top: 3.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
   background: rgba(240,239,229,0.06);
   border: 1px solid rgba(240,239,229,0.06);
@@ -863,7 +879,7 @@ section {
 
 .processo-aside-quote {
   font-family: 'DM Serif Display', serif;
-  font-size: 30px;
+  font-size: clamp(20px, 4vw, 30px);
   font-weight: 400;
   font-style: italic;
   line-height: 1.4;
@@ -881,9 +897,11 @@ section {
 }
 
 .processo-aside-cta {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.6rem;
+  width: 100%;
   background: rgba(240,239,229,0.1);
   color: rgba(240,239,229,0.75);
   text-decoration: none;
@@ -1059,55 +1077,6 @@ footer {
   opacity: 0.75;
 }
 
-/* ── FAQ ── */
-.faq { background: var(--cream-mid); }
-.faq-list { margin-top: 3rem; display: flex; flex-direction: column; gap: 0; }
-.faq-item {
-  border-top: 1px solid rgba(61,79,62,0.12);
-}
-.faq-item:last-child { border-bottom: 1px solid rgba(61,79,62,0.12); }
-.faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
-  text-align: left;
-  font-family: 'Jost', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: var(--text);
-  letter-spacing: 0.01em;
-  transition: color 0.2s;
-}
-.faq-question:hover { color: var(--green-light); }
-.faq-icon {
-  flex-shrink: 0;
-  width: 20px; height: 20px;
-  display: flex; align-items: center; justify-content: center;
-  color: var(--green-pale);
-  transition: transform 0.3s;
-}
-.faq-item.open .faq-icon { transform: rotate(45deg); }
-.faq-answer {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.4s ease, padding 0.3s;
-}
-.faq-item.open .faq-answer { max-height: 400px; }
-.faq-answer-inner {
-  padding-bottom: 1.5rem;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.85;
-  color: var(--text-muted);
-  max-width: 720px;
-}
-
 /* ── WHATSAPP FLOAT ── */
 .whats-float {
   position: fixed;
@@ -1152,7 +1121,7 @@ footer {
 
   .hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 50vw 1fr;
+    grid-template-rows: clamp(220px, 50vw, 420px) 1fr;
     min-height: auto;
   }
 
@@ -1161,6 +1130,25 @@ footer {
   .hero-left {
     padding: 3rem 1.75rem 3.5rem;
     grid-row: 2;
+  }
+
+  .hero-title {
+    text-align: center;
+    font-size: clamp(28px, 8vw, 48px);
+  }
+
+  .hero-sub {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn-hero-primary,
+  .btn-hero-outline {
+    width: 100%;
   }
 
   .sobre-grid,
@@ -1181,7 +1169,7 @@ footer {
   }
   .processo-aside { position: static; }
 
-  .servicos-grid { grid-template-columns: 1fr; }
+  .servicos-grid { grid-template-columns: repeat(2, 1fr); }
 
   .portfolio-grid { justify-content: flex-start; }
   .portfolio-grid .proj-card { flex: 0 0 calc(50% - 0.63rem); }
@@ -1195,6 +1183,9 @@ footer {
 
 }
 
+@media (max-width: 500px) {
+  .servicos-grid { grid-template-columns: 1fr; }
+}
 
 /* ── MODAL PROJETO ── */
 .proj-modal-overlay {
@@ -1438,138 +1429,114 @@ footer {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Ilton Ferreira Arquitetura e Interiores",
-  "description": "Arquiteto em Imbituba SC especializado em projetos residenciais, comerciais e design de interiores. Atende Garopaba, Laguna, Florianópolis e toda Santa Catarina.",
-  "url": "https://iltonferreira.com.br",
-  "telephone": "+55-48-99698-2800",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Imbituba",
-    "addressRegion": "SC",
-    "addressCountry": "BR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -28.2397,
-    "longitude": -48.6656
-  },
-  "sameAs": [
-    "https://www.instagram.com/arqiltonfer/"
-  ],
-  "serviceType": [
-    "Arquitetura Residencial",
-    "Arquitetura Comercial",
-    "Design de Interiores",
-    "Projeto Executivo",
-    "Projeto Arquitetônico"
-  ],
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "City",
-      "name": "Imbituba",
-      "addressRegion": "SC"
+      "@type": ["ProfessionalService", "Architect"],
+      "@id": "https://arqiltonferreira.com/#business",
+      "name": "Ilton Ferreira Arquitetura e Interiores",
+      "description": "Arquiteto em Imbituba, SC especializado em projetos arquitetônicos residenciais e comerciais com identidade autoral. Do estudo preliminar ao projeto executivo completo, com atendimento remoto para toda Santa Catarina.",
+      "url": "https://arqiltonferreira.com",
+      "telephone": "+55-48-99698-2800",
+      "email": "arqiltonferreira@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Imbituba",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -28.2397,
+        "longitude": -48.6656
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Imbituba", "containedInPlace": {"@type": "State", "name": "Santa Catarina"}},
+        {"@type": "City", "name": "Laguna", "containedInPlace": {"@type": "State", "name": "Santa Catarina"}},
+        {"@type": "City", "name": "Garopaba", "containedInPlace": {"@type": "State", "name": "Santa Catarina"}},
+        {"@type": "City", "name": "Jaguaruna", "containedInPlace": {"@type": "State", "name": "Santa Catarina"}},
+        {"@type": "City", "name": "Florianópolis", "containedInPlace": {"@type": "State", "name": "Santa Catarina"}},
+        {"@type": "State", "name": "Santa Catarina"}
+      ],
+      "serviceType": [
+        "Projeto Arquitetônico Residencial",
+        "Projeto Arquitetônico Comercial",
+        "Design de Interiores",
+        "Projeto Executivo",
+        "Consultoria de Arquitetura",
+        "Aprovação de Projetos"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Arquitetura",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Projeto Arquitetônico Residencial", "description": "Projeto completo para casas e apartamentos, do estudo preliminar ao executivo."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Projeto Arquitetônico Comercial", "description": "Projetos para lojas, escritórios, restaurantes e espaços comerciais."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Design de Interiores", "description": "Desenvolvimento de ambientes com identidade visual, layout e especificação de materiais."}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Projeto Executivo", "description": "Documentação técnica completa para execução de obras."}}
+        ]
+      },
+      "sameAs": [
+        "https://www.instagram.com/arq.iltonferreira/"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Ilton Ferreira",
+        "jobTitle": "Arquiteto e Urbanista",
+        "alumniOf": "Universidade do Sul de Santa Catarina"
+      }
     },
     {
-      "@type": "City",
-      "name": "Garopaba",
-      "addressRegion": "SC"
-    },
-    {
-      "@type": "City",
-      "name": "Laguna",
-      "addressRegion": "SC"
-    },
-    {
-      "@type": "City",
-      "name": "Florianópolis",
-      "addressRegion": "SC"
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O arquiteto Ilton Ferreira atende fora de Imbituba?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Por atuar exclusivamente com projetos (sem execução de obra), o Ilton atende clientes em todo o estado de Santa Catarina de forma remota, incluindo Florianópolis, Laguna, Garopaba e outras cidades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais tipos de projetos arquitetônicos são desenvolvidos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Projetos residenciais (casas e apartamentos) e comerciais (lojas, escritórios, restaurantes, clínicas), além de design de interiores. Todos com identidade autoral, do estudo preliminar ao projeto executivo completo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O arquiteto faz acompanhamento de obra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A especialidade é o projeto arquitetônico — da concepção ao executivo. O acompanhamento de obra pode ser contratado separadamente mediante disponibilidade e localização."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona o processo de projeto arquitetônico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O processo começa com briefing e diagnóstico, seguido de estudo preliminar, anteprojeto com volumetria e perspectivas 3D, e finaliza com o projeto executivo completo com plantas, cortes, fachadas e especificações de materiais."
+          }
+        }
+      ]
     }
-  ]
-}
-</script>
-
-<!-- Schema FAQ — AEO / AI Overview -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Quanto custa um projeto arquitetônico em SC?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O valor de um projeto arquitetônico em Santa Catarina varia conforme a complexidade, metragem e tipo de obra. Projetos residenciais são geralmente precificados por m² ou por etapa (anteprojeto, projeto legal e projeto executivo). O escritório Ilton Ferreira Arquitetura oferece orçamento personalizado para cada cliente em Imbituba e região."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O arquiteto faz só o projeto, sem acompanhar a obra?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. O escritório Ilton Ferreira Arquitetura é especializado em projetos — do anteprojeto ao executivo completo — sem necessidade de execução de obra. Clientes que já têm construtora podem contratar apenas o projeto arquitetônico e/ou de interiores."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Como contratar um arquiteto em Imbituba?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O processo começa com uma conversa para entender a necessidade, estilo e orçamento. O arquiteto Ilton Ferreira apresenta uma proposta com escopo e prazo definidos. O contato pode ser feito pelo WhatsApp (48) 99698-2800 ou pelo site iltonferreira.com.br."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O escritório atende fora de Imbituba?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. O escritório atende toda a região sul de Santa Catarina, incluindo Garopaba, Laguna e Florianópolis. Para projetos em outras cidades do estado, também é possível atendimento remoto com visitas pontuais."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O que está incluído em um projeto de interiores residencial?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Um projeto de design de interiores completo inclui levantamento do imóvel, conceito estético, layout de mobiliário, especificação de materiais, acabamentos, iluminação e pranchas técnicas para execução."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- Schema Person — autoridade do profissional para IAs -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ilton Ferreira",
-  "jobTitle": "Arquiteto e Urbanista",
-  "description": "Arquiteto e Urbanista registrado no CAU/BR, especializado em projetos arquitetônicos residenciais, comerciais e design de interiores em Imbituba, SC e região.",
-  "url": "https://iltonferreira.com.br",
-  "telephone": "+55-48-99698-2800",
-  "sameAs": [
-    "https://www.instagram.com/arqiltonfer/"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Imbituba",
-    "addressRegion": "SC",
-    "addressCountry": "BR"
-  },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "Universidade do Sul de Santa Catarina",
-    "alternateName": "UNISUL"
-  },
-  "knowsAbout": [
-    "Arquitetura Residencial",
-    "Arquitetura Comercial",
-    "Design de Interiores",
-    "Projeto Executivo",
-    "Anteprojeto",
-    "Projeto Legal"
   ]
 }
 </script>
@@ -1591,6 +1558,7 @@ footer {
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#portfolio">Portfólio</a></li>
       <li><a href="#processo">Processo</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="https://wa.me/5548996982800?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer" class="nav-cta">Orçamento</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -1604,6 +1572,7 @@ footer {
   <a href="#servicos" class="mobile-link">Serviços</a>
   <a href="#portfolio" class="mobile-link">Portfólio</a>
   <a href="#processo" class="mobile-link">Processo</a>
+  <a href="#faq" class="mobile-link">FAQ</a>
   <a href="https://wa.me/5548996982800?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank" rel="noopener noreferrer" class="mobile-link">Orçamento →</a>
 </div>
 
@@ -1612,11 +1581,11 @@ footer {
 <section class="hero" id="hero">
   <!-- Esquerda -->
   <div class="hero-left">
-    <p class="hero-eyebrow">Arquiteto em Imbituba e Região, SC</p>
-    <h1 class="hero-title">Arquitetura<br><em>residencial e comercial.</em></h1>
-    <p class="hero-sub">Projetos arquitetônicos e de interiores em Imbituba, Garopaba, Laguna e toda Santa Catarina — do anteprojeto ao executivo completo.</p>
+    <p class="hero-eyebrow">Imbituba e Região, SC</p>
+    <h1 class="hero-title">Arquitetura, <em>do seu jeito!</em></h1>
+    <p class="hero-sub">Sempre buscando traduzir suas necessidades e visões em soluções arquitetônicas criativas, funcionais e sustentáveis.</p>
     <div class="hero-actions">
-      <a href="https://wa.me/5548996982800?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-hero-primary">
+      <a href="https://wa.me/5548996982800?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="btn-hero-primary" style="white-space:nowrap">
         Faça um orçamento
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
@@ -1697,7 +1666,7 @@ footer {
   </div>
 </section>
 
-<!-- ░░ TICKER ░░ -->
+<h1 aria-hidden="true" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Arquiteto em Imbituba SC — Ilton Ferreira Arquitetura e Interiores</h1>
 <div class="ticker-section">
   <div class="ticker-track" id="ticker-track"></div>
 </div>
@@ -1708,15 +1677,15 @@ footer {
     <div class="sobre-grid">
       <div class="sobre-image-wrap">
         <div class="sobre-image-main">
-          <img loading="lazy" src="imagens/ilton.png" alt="Ilton Ferreira" >
+          <img loading="lazy" src="imagens/ilton.png" alt="Ilton Ferreira — Arquiteto e Urbanista em Imbituba SC" >
         </div>
         <div class="sobre-accent"></div>
       </div>
 
       <div class="sobre-content">
-        <h2 class="section-title fade-up">Arquiteto e<br><em>Urbanista.</em></h2>
-        <p class="sobre-text fade-up">Formado pela Universidade do Sul de Santa Catarina, atualmente pós-graduando em Arquitetura de Interiores pelo Instituto PRISMA. Especializado em projetos arquitetônicos e de interiores.</p>
-        <img loading="lazy" src="imagens/ilton.png" alt="Ilton Ferreira" class="sobre-mobile-img fade-up">
+        <h2 class="section-title mobile-center fade-up">Arquiteto e <em>Urbanista</em></h2>
+        <p class="sobre-text fade-up">Formado pela Universidade do Sul de Santa Catarina, pós-graduando em Arquitetura de Interiores pelo Instituto PRISMA. Especialista em projetos arquitetônicos residenciais e comerciais em Imbituba e toda a região de Santa Catarina — com foco exclusivo em projeto, da concepção ao executivo.</p>
+        <img loading="lazy" src="imagens/ilton.png" alt="Ilton Ferreira — Arquiteto em Imbituba SC" class="sobre-mobile-img fade-up">
         <div class="sobre-details fade-up">
           <p class="sobre-detail">Sempre buscando traduzir suas necessidades e visões em soluções arquitetônicas criativas, funcionais e sustentáveis.</p>
           <p class="sobre-detail">Meu trabalho abrange toda a concepção até o executivo, garantindo excelência e atenção aos detalhes em cada etapa do processo.</p>
@@ -1733,7 +1702,7 @@ footer {
 <!-- ░░ SERVIÇOS ░░ -->
 <section class="servicos" id="servicos">
   <div class="section-inner">
-    <h2 class="section-title fade-up">Residenciais, Comerciais<br><em>e Interiores.</em></h2>
+    <h2 class="section-title mobile-center fade-up">Residencial, Comercial <em>e Interiores</em></h2>
 
     <div class="servicos-grid fade-up">
 
@@ -1744,7 +1713,17 @@ footer {
           </svg>
           <h3 class="servico-title">Arquitetura Residencial</h3>
         </div>
-        <p class="servico-desc">Projetos personalizados que priorizam conforto, funcionalidade e estética, do anteprojeto ao executivo completo.</p>
+        <p class="servico-desc">Projetos personalizados para casas e apartamentos em Santa Catarina que priorizam conforto, funcionalidade e estética, do anteprojeto ao executivo completo.</p>
+      </div>
+
+      <div class="servico-card">
+        <div class="servico-header">
+          <svg class="servico-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+          </svg>
+          <h3 class="servico-title">Arquitetura Comercial</h3>
+        </div>
+        <p class="servico-desc">Projetos para lojas, escritórios, restaurantes e clínicas em SC, com atendimento remoto para todo o estado. Do conceito ao projeto executivo completo.</p>
       </div>
 
       <div class="servico-card">
@@ -1776,9 +1755,9 @@ footer {
   <div class="section-inner">
     <div class="portfolio-header">
       <div>
-        <h2 class="section-title fade-up">Projetos<br><em>selecionados.</em></h2>
+        <h2 class="section-title mobile-center fade-up">Projetos <em>selecionados</em></h2>
       </div>
-      <a href="https://www.instagram.com/arqiltonfer/" target="_blank" rel="noopener noreferrer" class="portfolio-link fade-up">
+      <a href="https://www.instagram.com/arq.iltonferreira/" target="_blank" rel="noopener noreferrer" class="portfolio-link fade-up">
         Ver todos os projetos →
       </a>
     </div>
@@ -1788,7 +1767,7 @@ footer {
       <!-- Residência A & B -->
       <div class="proj-card fade-up" onclick="openModal(0)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/aeb1.jpg" alt="Residência A &amp; B">
+          <img loading="lazy" src="imagens/aeb1.jpg" alt="Projeto arquitetônico residencial em SC — Residência A &amp; B por Ilton Ferreira">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1804,7 +1783,7 @@ footer {
       <!-- Residência F & E -->
       <div class="proj-card fade-up" onclick="openModal(1)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/fee1.jpg" alt="Residência F &amp; E">
+          <img loading="lazy" src="imagens/fee1.jpg" alt="Projeto de casa moderna em Santa Catarina — Residência F &amp; E por Ilton Ferreira">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1820,7 +1799,7 @@ footer {
       <!-- Studio I & R -->
       <div class="proj-card fade-up" onclick="openModal(2)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/ier1.jpg" alt="Studio I &amp; R">
+          <img loading="lazy" src="imagens/ier1.jpg" alt="Design de interiores studio compacto em SC — projeto Ilton Ferreira arquiteto Imbituba">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1836,7 +1815,7 @@ footer {
       <!-- Apto P & P -->
       <div class="proj-card fade-up" onclick="openModal(3)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/pep1.jpg" alt="Apto P &amp; P">
+          <img loading="lazy" src="imagens/pep1.jpg" alt="Design de interiores apartamento contemporâneo em SC — Apto P &amp; P por Ilton Ferreira">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1852,7 +1831,7 @@ footer {
       <!-- Residência C & S -->
       <div class="proj-card fade-up" onclick="openModal(4)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/ces1.jpg" alt="Residência C &amp; S">
+          <img loading="lazy" src="imagens/ces1.jpg" alt="Projeto residencial com área gourmet e piscina em SC — Residência C &amp; S arquiteto Imbituba">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1868,7 +1847,7 @@ footer {
       <!-- Residência A & P -->
       <div class="proj-card fade-up" onclick="openModal(5)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/aep1.jpg" alt="Residência A &amp; P">
+          <img loading="lazy" src="imagens/aep1.jpg" alt="Projeto arquitetônico residencial com paisagismo em Santa Catarina — Residência A &amp; P">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1884,7 +1863,7 @@ footer {
       <!-- Cabana D & C -->
       <div class="proj-card fade-up" onclick="openModal(6)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/dec1.jpg" alt="Cabana D &amp; C">
+          <img loading="lazy" src="imagens/dec1.jpg" alt="Projeto de cabana integrada à natureza em SC — arquiteto Ilton Ferreira Imbituba">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1900,7 +1879,7 @@ footer {
       <!-- Residência J & K -->
       <div class="proj-card fade-up" onclick="openModal(7)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/jek1.jpg" alt="Residência J &amp; K">
+          <img loading="lazy" src="imagens/jek1.jpg" alt="Projeto residencial com materiais naturais em Santa Catarina — Residência J &amp; K Ilton Ferreira">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1916,7 +1895,7 @@ footer {
       <!-- Residência A & A -->
       <div class="proj-card fade-up" onclick="openModal(8)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/aea1.jpg" alt="Residência A &amp; A">
+          <img loading="lazy" src="imagens/aea1.jpg" alt="Projeto arquitetônico minimalista com concreto e madeira em SC — Residência A &amp; A">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1932,7 +1911,7 @@ footer {
       <!-- Studio -->
       <div class="proj-card fade-up" onclick="openModal(9)">
         <div class="proj-card-img">
-          <img loading="lazy" src="imagens/studio1.jpg" alt="Studio — cozinha integrada">
+          <img loading="lazy" src="imagens/studio1.jpg" alt="Design de interiores studio com cozinha integrada em SC — projeto arquiteto Ilton Ferreira">
         </div>
         <div class="proj-card-body">
           <div class="proj-card-info">
@@ -1999,7 +1978,7 @@ footer {
 <!-- ░░ PROCESSO ░░ -->
 <section class="processo" id="processo">
   <div class="section-inner">
-    <h2 class="section-title fade-up">Do conceito ao<br><em>executivo.</em></h2>
+    <h2 class="section-title mobile-center fade-up">Do conceito ao <em>executivo</em></h2>
 
     <div class="processo-grid">
       <div class="processo-steps">
@@ -2039,15 +2018,15 @@ footer {
         <div class="passo fade-up">
           <div class="passo-num">05</div>
           <div class="passo-content">
-            <h3 class="passo-title">Acompanhamento de Obra</h3>
-            <p class="passo-desc">Presença nas visitas periódicas para garantir fidelidade ao projeto, qualidade de execução e excelência em cada etapa.</p>
+            <h3 class="passo-title">Suporte ao Projeto</h3>
+            <p class="passo-desc">Disponibilidade para esclarecimentos técnicos durante a execução da obra, garantindo que o projeto seja fielmente executado pela construtora do cliente.</p>
           </div>
         </div>
 
       </div>
 
       <div class="processo-aside fade-up">
-        <p class="processo-aside-quote">"Transformar seu espaço em um ambiente único e alinhado às suas expectativas."</p>
+        <p class="processo-aside-quote">"Transformar seu espaço em um ambiente único e alinhado às suas expectativas!"</p>
         <p class="processo-aside-sub">Cada projeto é desenvolvido de forma personalizada, do início ao fim, com atenção, dedicação e excelência em cada detalhe.</p>
         <a href="https://wa.me/5548996982800?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="processo-aside-cta">
           Iniciar meu projeto
@@ -2066,7 +2045,7 @@ footer {
       <div class="contato-items-row">
         <div class="contato-item">
           <span class="contato-item-label">Instagram</span>
-          <a href="https://www.instagram.com/arqiltonfer/" target="_blank" rel="noopener noreferrer" class="contato-item-value">@arqiltonfer</a>
+          <a href="https://www.instagram.com/arq.iltonferreira/" target="_blank" rel="noopener noreferrer" class="contato-item-value">@arq.iltonferreira</a>
         </div>
 
         <div class="contato-item">
@@ -2076,18 +2055,18 @@ footer {
 
         <div class="contato-item">
           <span class="contato-item-label">E-mail</span>
-          <a data-mail="iltonoufer" data-domain="gmail.com" href="#" class="contato-item-value">iltonoufer@gmail.com</a>
+          <a data-mail="arqiltonferreira" data-domain="gmail.com" href="#" class="contato-item-value">arqiltonferreira@gmail.com</a>
         </div>
 
         <div class="contato-item">
           <span class="contato-item-label">Localização</span>
           <span class="contato-item-value">Imbituba – SC</span>
-          <span class="hero-slide-sub">Atendimento em toda a região</span>
+          <span class="hero-slide-sub">Atendimento em toda Santa Catarina</span>
         </div>
       </div>
 
       <div class="contato-socials">
-        <a href="https://www.instagram.com/arqiltonfer/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+        <a href="https://www.instagram.com/arq.iltonferreira/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5"/>
             <circle cx="12" cy="12" r="4"/>
@@ -2099,7 +2078,7 @@ footer {
             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
           </svg>
         </a>
-        <a data-mail="iltonoufer" data-domain="gmail.com" href="#" class="social-link contato-item-value" aria-label="E-mail">
+        <a data-mail="arqiltonferreira" data-domain="gmail.com" href="#" class="social-link contato-item-value" aria-label="E-mail">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
           </svg>
@@ -2111,62 +2090,42 @@ footer {
 </section>
 
 <!-- ░░ FAQ ░░ -->
-<section class="faq" id="faq">
+<section style="background:var(--cream-mid);padding:5rem 2rem" id="faq">
   <div class="section-inner">
-    <p class="section-label fade-up">Dúvidas frequentes</p>
-    <h2 class="section-title fade-up">Perguntas <em>& Respostas.</em></h2>
+    <h2 class="section-title mobile-center fade-up" style="margin-bottom:2.5rem">Perguntas <em>frequentes</em></h2>
+    <div style="display:flex;flex-direction:column;gap:0" class="faq-list">
 
-    <div class="faq-list">
+      <details style="border-top:1px solid rgba(61,79,62,0.12);padding:1.25rem 0" class="fade-up">
+        <summary style="font-size:14px;font-weight:400;letter-spacing:0.02em;color:var(--text);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          Você atende fora de Imbituba?
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-left:1rem"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <p style="font-size:13px;line-height:1.8;color:var(--text-muted);margin-top:1rem;font-weight:300">Sim. Por trabalhar exclusivamente com projetos, sem execução de obra, atendo clientes em todo o estado de Santa Catarina de forma remota. Florianópolis, Laguna, Garopaba, Jaguaruna e outras cidades da região.</p>
+      </details>
 
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Quanto custa um projeto arquitetônico em SC?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p class="faq-answer-inner">O valor de um projeto arquitetônico em Santa Catarina varia conforme a complexidade, metragem e tipo de obra. Em geral, projetos residenciais são precificados por m² ou por etapa (anteprojeto, projeto legal e projeto executivo). O Ilton oferece orçamento personalizado e sem compromisso — entre em contato para receber uma proposta adequada à sua necessidade.</p>
-        </div>
-      </div>
+      <details style="border-top:1px solid rgba(61,79,62,0.12);padding:1.25rem 0" class="fade-up">
+        <summary style="font-size:14px;font-weight:400;letter-spacing:0.02em;color:var(--text);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          Quais tipos de projeto você desenvolve?
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-left:1rem"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <p style="font-size:13px;line-height:1.8;color:var(--text-muted);margin-top:1rem;font-weight:300">Projetos residenciais (casas e apartamentos) e comerciais (lojas, escritórios, restaurantes e clínicas), além de design de interiores. Todos com identidade autoral, do estudo preliminar ao projeto executivo.</p>
+      </details>
 
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          O arquiteto faz só o projeto, sem acompanhar a obra?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p class="faq-answer-inner">Sim. O escritório Ilton Ferreira Arquitetura é especializado em projetos — do anteprojeto até o executivo completo — sem necessidade de execução de obra. Muitos clientes já têm construtora ou construtor de confiança e contratam apenas o projeto arquitetônico e/ou de interiores. Isso é totalmente possível e muito comum.</p>
-        </div>
-      </div>
+      <details style="border-top:1px solid rgba(61,79,62,0.12);padding:1.25rem 0" class="fade-up">
+        <summary style="font-size:14px;font-weight:400;letter-spacing:0.02em;color:var(--text);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          Você faz acompanhamento de obra?
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-left:1rem"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <p style="font-size:13px;line-height:1.8;color:var(--text-muted);margin-top:1rem;font-weight:300">Minha especialidade é o projeto arquitetônico, da concepção ao executivo. A execução da obra fica a cargo do cliente ou de uma construtora de confiança. O acompanhamento pode ser contratado separadamente mediante disponibilidade.</p>
+      </details>
 
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Como contratar um arquiteto em Imbituba?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p class="faq-answer-inner">O processo começa com uma conversa para entender sua necessidade, estilo e orçamento disponível. A partir daí, o Ilton apresenta uma proposta de serviço com escopo e prazo definidos. Para iniciar, basta entrar em contato pelo WhatsApp ou pelo formulário do site.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          Vocês atendem fora de Imbituba?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p class="faq-answer-inner">Sim. O escritório atende toda a região sul de Santa Catarina, incluindo Garopaba, Laguna, Florianópolis e cidades próximas. Para projetos em outras localidades do estado, também é possível atendimento remoto com visitas pontuais ao local.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          O que está incluído em um projeto de interiores residencial?
-          <span class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span>
-        </button>
-        <div class="faq-answer" role="region">
-          <p class="faq-answer-inner">Um projeto de design de interiores completo inclui levantamento do imóvel, conceito e partido estético, layout de mobiliário, especificação de materiais, acabamentos e iluminação, além de pranchas técnicas para execução. O escopo exato é definido conforme a necessidade de cada cliente.</p>
-        </div>
-      </div>
+      <details style="border-top:1px solid rgba(61,79,62,0.12);border-bottom:1px solid rgba(61,79,62,0.12);padding:1.25rem 0" class="fade-up">
+        <summary style="font-size:14px;font-weight:400;letter-spacing:0.02em;color:var(--text);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center">
+          Como funciona o processo de projeto?
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-left:1rem"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <p style="font-size:13px;line-height:1.8;color:var(--text-muted);margin-top:1rem;font-weight:300">O processo começa com um briefing para entender suas necessidades e visão. Em seguida, desenvolvemos o estudo preliminar, o anteprojeto com perspectivas 3D, e finalizamos com o projeto executivo completo, com plantas, cortes, fachadas e especificação de materiais.</p>
+      </details>
 
     </div>
   </div>
@@ -2174,7 +2133,8 @@ footer {
 
 <!-- ░░ FOOTER ░░ -->
 <footer>
-  <p class="footer-copy">© 2026 Ilton Ferreira · CAU/BR A245753-9 — Arquitetura e Interiores · Imbituba, SC</p>
+  <p class="footer-copy">© 2026 Ilton Ferreira Arquitetura e Interiores · CAU/BR A245753-9 · Imbituba, SC · (48) 99698-2800</p>
+  <p class="footer-copy" style="font-size:11px;margin-top:4px;opacity:0.6">Arquiteto em Imbituba SC — Projetos residenciais e comerciais em toda Santa Catarina</p>
   <p class="footer-dev">Website desenvolvido por <a href="https://amplifyingmkt.com.br" target="_blank" rel="noopener noreferrer" class="footer-dev-link">AMPLIFYING</a></p>
 </footer>
 
@@ -2260,23 +2220,7 @@ document.addEventListener('visibilitychange', function() {
   }
 });
 
-// ── FAQ ACCORDION ──
-document.querySelectorAll('.faq-question').forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    var item = btn.closest('.faq-item');
-    var isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(function(el) {
-      el.classList.remove('open');
-      el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-    });
-    if (!isOpen) {
-      item.classList.add('open');
-      btn.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
-
-
+// ── FADE-UP OBSERVER ──
 const obs = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) {
