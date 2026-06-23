@@ -791,11 +791,39 @@ section {
 }
 
 @media (max-width: 767px) {
+  .portfolio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .portfolio .section-inner {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .portfolio-grid {
+    gap: 1rem;
+    padding: 0;
+  }
   .portfolio-grid .proj-card {
     flex: 0 0 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
   }
   .proj-card-img {
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 4 / 3;
+  }
+  .proj-card-body {
+    padding: 1.25rem 1.5rem;
+  }
+  .proj-card-name {
+    font-size: 20px;
+  }
+  .proj-card-arrow {
+    width: 42px;
+    height: 42px;
+    background: var(--green-dark);
+    border-color: var(--green-dark);
+    color: var(--cream);
   }
 }
 
