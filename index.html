@@ -23,6 +23,8 @@
 <meta property="og:title" content="Projeto Arquitetônico em Imbituba SC | Ilton Ferreira — Arquitetura e Interiores">
 <meta property="og:description" content="Escritório de arquitetura em Imbituba, SC. Projetos arquitetônicos residenciais, arquitetura comercial e arquitetura de interiores. Atendimento em Garopaba, Praia do Rosa, Laguna, Tubarão e Jaguaruna.">
 <meta property="og:image" content="https://arqiltonferreira.com/imagens/thumb.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Ilton Ferreira Arquitetura e Interiores">
 
@@ -30,7 +32,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://arqiltonferreira.com/">
 <meta name="twitter:title" content="Projeto Arquitetônico em Imbituba SC | Ilton Ferreira — Arquitetura e Interiores">
-<meta name="twitter:description" content="Projetos arquitetônicos residenciais, arquitetura comercial e arquitetura de interiores em Imbituba e região. Atendimento em Garopaba, Praia do Rosa, Laguna e Tubarão.">
+<meta name="twitter:description" content="Projetos arquitetônicos residenciais, arquitetura comercial e arquitetura de interiores em Imbituba e região. Atendimento em Garopaba, Praia do Rosa, Laguna, Tubarão e Jaguaruna.">
 <meta name="twitter:image" content="https://arqiltonferreira.com/imagens/thumb.png">
 
 <!-- Theme color (barra do navegador mobile) -->
@@ -454,26 +456,6 @@ section {
   margin: 0 auto;
 }
 
-.section-label {
-  font-size: 9.5px;
-  font-weight: 400;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--green-pale);
-  margin-bottom: 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.section-label::before {
-  content: '';
-  display: block;
-  width: 24px; height: 1px;
-  background: var(--green-pale);
-  opacity: 0.5;
-}
-
 .section-title {
   font-family: 'DM Serif Display', serif;
   font-size: clamp(36px, 4.2vw, 56px);
@@ -493,7 +475,7 @@ section {
   .section-title.mobile-center { text-align: center; }
 }
 @media (min-width: 1024px) {
-  .section-title { text-align: center; white-space: nowrap; }
+  .section-title { text-align: center; }
   .faq-list { max-width: 100%; }
 }
 
@@ -610,8 +592,6 @@ section {
   padding: 6rem 2rem;
 }
 
-.servicos .section-label { color: rgba(240,239,229,0.35); }
-.servicos .section-label::before { background: rgba(240,239,229,0.2); opacity: 1; }
 .servicos .section-title { color: var(--cream); }
 .servicos .section-title em { color: rgba(240,239,229,0.45); }
 
@@ -966,8 +946,6 @@ section {
   padding: 3rem 2rem;
 }
 
-.contato .section-label { color: rgba(240,239,229,0.35); }
-.contato .section-label::before { background: rgba(240,239,229,0.2); opacity: 1; }
 .contato .section-title { color: var(--cream); }
 .contato .section-title em { color: rgba(240,239,229,0.45); }
 
@@ -1034,30 +1012,6 @@ a.contato-item-value:hover { color: var(--cream); }
   color: rgba(240,239,229,0.8);
 }
 .social-link svg { width: 15px; height: 15px; }
-
-.btn-whats {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: #25D366;
-  color: #fff;
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
-  border-radius: 2px;
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.2);
-  align-self: flex-start;
-}
-.btn-whats:hover {
-  background: #1ebe5a;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(37,211,102,0.3);
-}
-.btn-whats svg { width: 18px; height: 18px; flex-shrink: 0; }
 
 /* ── FOOTER ── */
 footer {
@@ -2314,6 +2268,17 @@ document.addEventListener('visibilitychange', function() {
   }
 });
 
+// ── SWIPE HERO (mobile) ──
+(function() {
+  var el = document.getElementById('hero-slides');
+  var startX = 0;
+  el.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+  el.addEventListener('touchend', function(e) {
+    var diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) heroGoSlide(heroCur + (diff > 0 ? 1 : -1));
+  }, { passive: true });
+})();
+
 // ── FADE-UP OBSERVER ──
 const obs = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
@@ -2514,6 +2479,17 @@ function updateModalSlider() {
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closeModal();
 });
+
+// ── SWIPE MODAL (mobile) ──
+(function() {
+  var el = document.getElementById('modal-slides');
+  var startX = 0;
+  el.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+  el.addEventListener('touchend', function(e) {
+    var diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) slideNav(diff > 0 ? 1 : -1);
+  }, { passive: true });
+})();
 </script>
 </body>
 </html>
